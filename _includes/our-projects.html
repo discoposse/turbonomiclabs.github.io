@@ -1,0 +1,24 @@
+<div class='full parallax' style='background-image: url(images/team1600-1200.jpg); color: #fff;'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      {% include section-header.html title="Projects and Integrations" color="#fff" %}
+      <div class='spacing'></div>
+      <p>
+        These are some of the open source projects that we are working on at Turbonomic.  They include internally developed projects, as well as external open source projects and products that integrate with the Turbonomic platform.
+      </p>
+      <div class='spacing'></div>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <div class='mod modClients' data-slides_to_show='4'>
+        <div class='clients'>
+          {% for project in site.data.projects %}
+            <div><img alt="" src="{{project.image}}" width="150" /></div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class='two spacing'></div>
+</div>

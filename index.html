@@ -1,0 +1,119 @@
+---
+layout: default
+title: Open Source @ Turbonomic
+section_id: about
+testimonials:
+  - quote: Open source is a part of our core here at Turbonomic, and we are doing everything we can to give back to the community through code contributions, community engagement, event hosting and more.  I'm super excited about what we are building and sharing with the open source community.
+    author: Eric Wright, Technology Evangelist @ Turbonomic
+  - quote: Transparency of source gives opportunity to understand better, freedom to innovate solutions for customer’s problems and learn from talented programmers across globe..
+    author: Ahmed Saba, Engineering Manager @ Turbonomic    
+---
+
+<div class='full parallax' style='background-image: url(images/supply-chain-zone.jpg); color: #fff;'>
+  <div class='row'>
+    <div class='twelve columns'>
+      {% include section-header.html title="Open Source @ Turbonomic" color="#fff" tagline="Open Source Collaboration and Active Projects" class="big" %}
+    </div>
+  </div>
+  <div class='four spacing'></div>
+</div>
+
+<div class="four spacing"></div>
+
+<div class="row">
+  <div class="medium-3 large-3 columns">
+    {% include icon-text.html title='Powering Open Source with Turbonomic' desc='We provide Turbonomic integration with all of the leading open source infrastructure systems.  Assuring application performance can only be done by integrating at every layer of the IT stack, from infrastructure to the applications, with significant work being done in open source projects.' icon_class='fa fa-bolt' delay='0' shape_class='icon-text-circle' %}
+  </div>
+  <div class="medium-3 large-3 columns">
+    {% include icon-text.html title='Promoting Open Source Development' desc='Our engineering teams are encouraged to work on open source projects as a part of their role at Turbonomic.  The practice of embracing open source as a part of our engineering DNA ensure we enable great engineers to do more with the open source community at large.' icon_class='fa fa-bullhorn' delay='200' shape_class='icon-text-circle' %}
+  </div>
+  <div class="medium-3 large-3 columns">
+    {% include icon-text.html title='Open Platforms Powering Turbonomic' desc='We use many open source platforms as a part of the Turbonomic core environment.  This approach ensures that we are active in developing on, and contributing actively to open source projects as part of our core strategy.' icon_class='fa fa-tablet' delay='400' shape_class='icon-text-circle' %}
+  </div>
+  <div class="medium-3 large-3 columns">
+    {% include icon-text.html title='Colloboration and Community' desc='Turbonomic actively promotes open source community growth through our <a href="http://greencirclecommunity.com">Green Circle Community</a>, as well as providing space for Meetups, Hackathons, and other community education at our offices in Boston and New York. .' icon_class='fa fa-comments-o' delay='600' shape_class='icon-text-circle' %}
+  </div>
+</div>
+
+<div class="spacing"></div>
+
+<div class="full" style="background: #f5f5f5;">
+  <div class="row">
+    <div class="large-12 columns">
+      {% include section-header.html title="Our Commitment to Open Source" %}
+      <div class="spacing"></div>
+      <p>
+        Our team at Turbonomic both consumes and creates open source platforms in order to use the best avaiable community-supported solutions as part of our internal platform, and to provide integration to many open source ecosystems.  Our goal is simple:  enable our developers and customers to innovate through open source together.  
+        <br /><br />
+        Open source enables innovative solutions to solve business challenges with a collaborative approach.  Our commitment to open source development is not just in Turbonomic integration, but also in providing our engineers the ability to 
+        build open source tools and platforms to nurture that collaborative capability.  
+      </p>
+      <div class="three spacing"></div>
+    </div>
+  </div>
+</div>
+<!--
+<div class='full'>
+  <div class='row'>
+    <div class='medium-6 columns'>
+      <h3>Our history</h3>
+      <p>Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing.</p>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing.</p>
+    </div>
+    <div class='medium-6 columns'>
+      <h3>Our skills</h3>
+      <div class='mod modBarGraph'>
+        <ul class='bars'>
+          {% for skill in page.skills %}
+            <li>
+              <h4 style=''>
+                {{skill.title}}
+                <strong>{{skill.percentage}}%</strong>
+              </h4>
+              <p class='highlighted' data-percent='{{skill.percentage}}'></p>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="three spacing"></div>
+    </div>
+  </div>
+</div> -->
+
+<div class='full parallax' style='background: #fff'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <p class='centered-text'>
+        <i class='fa fa-quote-left' style='color: #1E8449; font-size: 36px;'></i>
+      </p>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='large-12 columns'>
+      {% include section-header.html title="The importance of Open Source @ Turbonomic" %}
+      <div class='spacing'></div>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <div class='mod modTestimonials'>
+        <div class='row'>
+          <div class='small-12 columns'>
+            <div class='items centered-text'>
+              {% for testimonial in page.testimonials %}
+                <div class='item'>
+                  <p class='quote'>"{{testimonial.quote}}"</p>
+                  <p class='author'>- {{testimonial.author}}</p>
+                  <div class='two spacing'></div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+          <div class='spacing'></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include our-projects.html %}

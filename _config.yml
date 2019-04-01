@@ -1,0 +1,19 @@
+# Site settings
+title: Turbonomic Labs
+email: eric.wright@turbonomic.com
+description: > # this means to ignore newlines until "baseurl:"
+  The central source for open source collaboration at Turbonomic.  
+baseurl: "" # the subpath of your site, e.g. /blog/
+# url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: turbonomic
+github_username:  turbonomic
+host: 0.0.0.0
+
+# Build settings
+markdown: kramdown
+
+
+paginate: 3
+paginate_path: "blog/page:num"
+
+gems: [jekyll-paginate]

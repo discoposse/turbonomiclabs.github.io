@@ -1,0 +1,71 @@
+---
+layout: default
+title: Turbonomic Open Source Projects
+section_id: services
+services_left:
+  - icon: cloud-upload
+    title: <a href="https://github.com/vmturbo/vmturbo-go-sdk">Turbonomic Go SDK</a>
+    desc: Sample code to illustrate how to interact with Turobnomic using our freely available Go SDK.
+  - icon: cogs
+    title: <a href="https://github.com/vmturbo/mesosturbo">mesosturbo</a>
+    desc:  Scheduler integration to use Turbonomic as the scheduler for an Apache Mesos environment. 
+  - icon: cogs
+    title: <a href="https://github.com/vmturbo/kubeturbo">kubeturbo</a>
+    desc: Scheduler integration to use Turbonomic as the scheduler for a Kubernetes environment.
+  - icon: list-ol
+    title: <a href="https://github.com/vmturbo/OpenSurveys">OpenSurveys</a>
+    desc: Raw data from various industry surveys on cloud, containers, multi-cloud, OpenStack and more.
+services_right:
+  - icon: cloud-upload
+    title: <a href="https://github.com/vmturbo/vmturbo-sdk-examples">Turbonomic SDK Examples</a>
+    desc: Sample code to illustrate how to interact with Turobnomic using our freely available Java SDK.
+  - icon: cloud-upload
+    title: <a href="https://github.com/vmturbo/nova">OpenStack - Nova</a>
+    desc: OpenStack Compute project which features enhancments contributed by our engineering team.
+  - icon: cloud-upload
+    title: <a href="https://github.com/vmturbo/openstack-java-sdk">OpenStack - Java SDK</a>
+    desc: OpenStack Java SDK which features enhancments contributed by our engineering team.
+  - icon: cloud-upload
+    title: <a href="https://github.com/vmturbo/ceilometer">OpenStack - Ceilometer</a>
+    desc: OpenStack Telemetry project which features enhancments contributed by our engineering team.
+---
+
+<div class='full parallax' style='background-image: url(images/supply-chain-zone.jpg); color: #fff;'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      {% include section-header.html title="Turbonomic Open Source Projects" tagline="Get to know what we do" color="#fff" class="big" %}
+    </div>
+  </div>
+  <div class='four spacing'></div>
+</div>
+
+
+<div class='full'>
+  <div class='row'>
+    <div class='medium-6 columns'>
+      {% for service in page.services_left %}
+        <div class='fadein mod modIconText' data-delay='{{ 300 | times:forloop.index0 }}'>
+          <div class='icon-text-simple'>
+            <i class='fa fa-{{service.icon}}'></i>
+            <h3>{{service.title}}</h3>
+            <p>{{service.desc}}</p>
+          </div>
+          <div class='two spacing'></div>
+        </div>
+      {% endfor %}
+    </div>
+    <div class='medium-6 columns'>
+      {% for service in page.services_right %}
+        <div class='fadein mod modIconText' data-delay='{{ 300 | times:forloop.index0 }}'>
+          <div class='icon-text-simple'>
+            <i class='fa fa-{{service.icon}}'></i>
+            <h3>{{service.title}}</h3>
+            <p>{{service.desc}}</p>
+          </div>
+          <div class='two spacing'></div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class='spacing'></div>
+</div>
